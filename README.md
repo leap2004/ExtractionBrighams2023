@@ -10,7 +10,7 @@ This project utilizes the power of OpenCV (Open Source Computer Vision Library) 
 
 - **Text Extraction**: Implement Optical Character Recognition (OCR) using Tesseract to extract text from different sections of the angiography scans.
   
-- **Text Readction**: Redact patient data, proecting patient privacy and ensuring anonymity regarding medical scans.
+- **Text Redaction**: Redact patient data, proecting patient privacy and ensuring anonymity regarding medical scans.
 
 - **Information Aggregation**: Collect extracted information, including patient names, dates, times, hospital details, filter values, sequence numbers, and more.
 
