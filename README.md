@@ -2,13 +2,15 @@ Angiography Scan Analysis using OpenCV and Natural Language Processing
 
 ## Overview
 
-This project utilizes the power of OpenCV (Open Source Computer Vision Library) and natural language processing (NLP) techniques to analyze angiography scans, extract relevant information, and perform various functions on the scans. The goal is to automate the process of extracting critical data from angiography scans and aggregating it for further analysis.
+This project utilizes the power of OpenCV (Open Source Computer Vision Library) and natural language processing (NLP) techniques to analyze angiography scans, extract relevant information, redact confidential patient information, and perform various functions on the scans. The goal is to automate the process of extracting and redacting critical data from angiography scans, allowing for the aggregation of data for further analysis.
 
 ## Features
 
 - **Background Removal**: Utilize image segmentation to remove the background and retain only the text and relevant regions within angiography scans.
 
 - **Text Extraction**: Implement Optical Character Recognition (OCR) using Tesseract to extract text from different sections of the angiography scans.
+  
+- **Text Readction**: Redact patient data, proecting patient privacy and ensuring anonymity regarding medical scans.
 
 - **Information Aggregation**: Collect extracted information, including patient names, dates, times, hospital details, filter values, sequence numbers, and more.
 
