@@ -1,6 +1,3 @@
-import os
-from image_processor import ImageProcessor
-from csv_writer import CSVWriter  # Make sure to import the CSVWriter class from the correct module
 
 class ImageProcessingPipeline:
     def __init__(self):
@@ -27,14 +24,3 @@ class ImageProcessingPipeline:
         self.csv_writer.output_csv(output_csv_path, output_text_path)
 
         print("Aggregated CSV file created.")
-
-if __name__ == "__main__":
-    user_documents = os.path.expanduser("~/Documents")
-    input_image_path = os.path.join(user_documents, "pics")
-    output_image_path_noText = os.path.join(user_documents, "output_images")
-    output_text_path = os.path.join(user_documents, "output_text")
-    output_image_path_noBackground = os.path.join(user_documents, "PreprocessedImages")
-    output_csv_path = os.path.join(user_documents, "output_csv")
-
-    pipeline = ImageProcessingPipeline()
-    pipeline.process_images(input_image_path, output_image_path_noText, output_text_path, output_image_path_noBackground, output_csv_path)
