@@ -1,3 +1,7 @@
+import os
+from image_processor import ImageProcessor
+from csv_writer import CSVWriter  # Make sure to import the CSVWriter class from the correct module
+
 class ImageProcessingPipeline:
     def __init__(self):
         self.image_processor = ImageProcessor()
